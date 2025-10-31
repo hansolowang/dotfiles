@@ -60,6 +60,8 @@ alias gca='git commit --amend'
 
 alias git_mad="git reset --hard HEAD"
 
+alias simulate=$HOME/git/mujoco/build/bin/simulate
+
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:~/.cargo/bin
