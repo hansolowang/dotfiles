@@ -16,7 +16,7 @@ set hlsearch
 set noswapfile
 set cc=80 "80 column border
 set clipboard+=unnamedplus
-syntax on "syntax highlighting
+
 
 inoremap jk <Esc>
 
@@ -44,9 +44,8 @@ call plug#begin()
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'rebelot/kanagawa.nvim'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 
-lua require('config/treesitter')
 lua require('config/kanagawa')
+lua require('config/treesitter')
