@@ -1,0 +1,22 @@
+#!/bin/bash
+
+rm -f $HOME/.zshrc
+rm -f $HOME/.tmux.conf
+rm -f $HOME/.gitconfig
+rm -f $HOME/.p10k.zsh
+rm -rf $HOME/.config/nvim
+rm -rf $HOME/.scripts
+ 
+DOT_DIR=$(pwd)
+
+cp $DOT_DIR/zshrc $HOME/.zshrc
+cp $DOT_DIR/tmux.conf $HOME/.tmux.conf
+cp $DOT_DIR/gitconfig $HOME/.gitconfig
+cp $DOT_DIR/p10k.zsh $HOME/.p10k.zsh
+
+mkdir -p ~/.config
+cp -r $DOT_DIR/config/nvim $HOME/.config/nvim
+mkdir -p ~/.scripts
+cp -r $DOT_DIR/scripts/* $HOME/.scripts
+
+exec zsh
