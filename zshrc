@@ -26,7 +26,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ $(uname) == "Darwin" ]]; then
     alias vim="/Users/han/git/nvim/bin/nvim"
 else
-    alias vim="/home/han/git/nvim/bin/nvim"
+    alias vim="~/git/nvim/bin/nvim"
 fi
 
 
