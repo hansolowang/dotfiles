@@ -39,6 +39,7 @@ endif
 
 " Install TreeSitter Language parsers with :TSInstall <language>
 call plug#begin() 
+    Plug 'folke/snacks.nvim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
