@@ -1,11 +1,8 @@
 return {
-    {
-        'embark-theme/vim',
-        lazy = false,
-        priority = 1000,
-        name = 'embark',
-        config = function()
-          vim.cmd.colorscheme('embark')
-        end
+    { 
+        "ellisonleao/gruvbox.nvim", 
+        priority = 1000 , 
+        config = true, 
+        opts = ...,
     }
 }
